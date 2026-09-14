@@ -17,4 +17,6 @@ function calculate() {
     const sum2 = numA + (numB * numC)
     // 3. Display the results in the respective span elements
     document.getElementById("average").textContent = sum;
+    document.getElementById("product").textContent = sum1;
+    document.getElementById("expression").textContent = sum2;
 }
