@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to calculate which league the player belongs to
 function calculateLeague() {
     // TODO: Get the handicap value from the input field
-    
+    document.getElementById('handicap')
     // TODO: Check if the handicap is less than 13
+    if (handicap < 13) {
     
+    }
     // TODO: Display the appropriate message in the result paragraph
-}
+}    
