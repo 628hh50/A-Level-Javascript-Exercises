@@ -13,7 +13,9 @@ function calculateLeague() {
     document.getElementById('handicap')
     // TODO: Check if the handicap is less than 13
     if (handicap < 13) {
-    
+    let league = "1"
+    else 
+        let league = "2"
     }
     // TODO: Display the appropriate message in the result paragraph
-}    
+}    document.getElementById('result')
