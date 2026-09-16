@@ -16,4 +16,4 @@ function calculatePay() {
     // TODO: Calculate total pay
     
     // TODO: Display the hours worked and total amount earned
-}
+}    document.getElementById('result').textContent = `Your hours are ${hours}`
