@@ -13,7 +13,7 @@ function calculateGrade() {
      let paper1 = parseInt(document.getElementById('comp1').value)
      let paper2 = parseInt(document.getElementById('comp2').value)
      let paper3 = parseInt(document.getElementById('comp3').value)
-     let paper4 = parseInt(document.getElementById('comp4).value)
+     let paper4 = parseInt(document.getElementById('comp4').value)
 
     // TODO: Calculate the total marks
     totalMarks = paper1 + paper2 + paper3 + paper4 
@@ -29,15 +29,16 @@ function calculateGrade() {
     if (percentage >= 80){
         grade = "A"
     }
-    elseif (percentage >= 70){
+    else if (percentage >= 70){
         grade = "B"
     }
-    elseif (percentage >= 60){
+    else if (percentage >= 60){
         grade = "C"
     }
-    elseif (percentage >= 50){
+    else if (percentage >= 50){
         grade = "D"
-    elseif (percentage >= 40){
+    }
+    else if (percentage >= 40){
         grade = "E"
     }
     else {
