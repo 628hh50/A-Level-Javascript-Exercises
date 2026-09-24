@@ -16,8 +16,9 @@ function generateSequence() {
     }
 
     // Check if step is positive
+    if (step >= 1)
     // Check if end is greater than start
-    
+    if (end > start)
     // TODO: Create array to store sequence
     let sequence = [];
     
@@ -30,6 +31,7 @@ function generateSequence() {
     output.innerHTML = sequence;
     
     // TODO: Display the sequence
+    document.getElementById('countDownOutput').innerHTML = '${sequence}';
     // Join the numbers with arrows between them
 }
 
