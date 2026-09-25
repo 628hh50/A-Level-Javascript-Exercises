@@ -25,7 +25,7 @@ function generateSequence() {
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
     for (i = start; i <= end; i += step) {
-        sequence.push(i + "=>");
+        sequence.push(i + ">=");
     }
 
     output.innerHTML = sequence;
