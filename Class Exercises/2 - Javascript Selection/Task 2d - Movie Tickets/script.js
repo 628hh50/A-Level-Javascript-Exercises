@@ -10,27 +10,48 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to calculate the total ticket cost
 function calculateTotal() {
     // TODO: Get values from all input fields
-    const adultTickets = parseInt(document.getElementById('adultTickets').value)
-    const childTickets = parseInt(document.getElementById('childTickets').value)
-    const seniorTickets = parseInt(document.getElementById('seniorTickets').value)
+    let adultTicketsNumber = parseInt(document.getElementById('adultTickets').value)
+    let childTicketsNumber = parseInt(document.getElementById('childTickets').value)
+    let seniorTicketsNumber = parseInt(document.getElementById('seniorTickets').value)
     let dayOfWeek = (document.getElementById('dayOfWeek').value)
     const showingTime = parseInt(document.getElementById('showingTime').value)
     // Adult: £12.00
     // Child: £8.00
     // Senior: £7.50
-    adultTickets * 12 === adultTickets
-    childTickets * 8 === childTickets
-    seniorTickets * 7.5 === seniorTickets
+    adultTicketsNumber * 12 === adultTicketsPriceOriginal
+    childTicketsNumber * 8 === childTicketsPriceOriginal
+    seniorTicketsNumber * 7.5 === seniorTicketsPriceOriginal
     // TODO: Apply day of week adjustments
     // Friday-Sunday: +£2.50 per ticket
     if (dayOfWeek === friday || dayOfWeek === saturday || dayOfWeek === sunday) {
-        
+        childTicketsPriceOriginal + 2.50 === childTicketsPriceWeek
+        adultTicketsPriceOriginal + 2.50 === adultTicketsPriceWeek
+        seniorTicketsPriceOriginal + 2.50 === seniorTicketsPriceWeek
     }
     // TODO: Apply time adjustments
     // Before 5 PM: -£1.50 per ticket
-    
+    if (time < 17_) {
+        childTicketsPriceOriginal - 1.5 === childTicketsPriceTime
+        adultTicketsPriceOriginal - 1.5 === adultTicketsPriceTime
+        seniorTicketsPriceOriginal - 1.5 === seniorTicketsPriceTime
+    }
+    else {
+        childTicketsPriceOriginal = childTicketsNumberOriginal
+        childTicketsPriceTime = childTicketsPriceTime
+        childTicketsPriceWeek = childTicketsPriceWeek
+
+        adultTicketsPriceOriginal = adultTicketsPriceOriginal
+        adultTicketsPriceTime = adultsTicketsPriceTime
+        adultTicketsPriceWeek = adultsTicketsPriceWeek
+
+        seniorTicketsPriceOriginal = seniorTicketsPriceOriginal
+        seniorTicketsPriceTime = seniorTicketsPriceTime
+        seniorTicketsPriceWeek = seniorTicketsPriceWeek
+
+
+    }
     // TODO: Calculate subtotal
-    
+    subtotal = childTicketsNumberOriginal + seniorTicketsPriceOriginal + adultTicketsPriceOriginal
     // TODO: Check for and apply special discounts
     // Family ticket (2 adults + 2 children): 10% off
     // Group booking (6 or more tickets): 15% off
@@ -38,4 +59,7 @@ function calculateTotal() {
         finalTotal = 0.9 
     }
     // TODO: Display price breakdown, subtotal, any discounts, and final total
+    document.getElementById(`result`).textContent = `Your final subtotal is £${subtotal}`
+
+    document.getElementById(`result`).textContent = `Your final total is £${total}`
 }
