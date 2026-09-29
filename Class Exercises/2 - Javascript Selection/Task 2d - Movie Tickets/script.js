@@ -23,7 +23,7 @@ function calculateTotal() {
     seniorTickets * 7.5 === seniorTickets
     // TODO: Apply day of week adjustments
     // Friday-Sunday: +£2.50 per ticket
-    if (dayOfWeek = friday || dayOfWeek = saturday || dayOfWeek = sunday) {
+    if (dayOfWeek === friday || dayOfWeek === saturday || dayOfWeek === sunday) {
         
     }
     // TODO: Apply time adjustments
