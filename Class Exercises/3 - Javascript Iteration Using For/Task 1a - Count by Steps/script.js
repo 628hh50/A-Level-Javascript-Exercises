@@ -16,16 +16,16 @@ function generateSequence() {
     }
 
     // Check if step is positive
-    if (step >= 1)
+    if (step >= 1) {}
     // Check if end is greater than start
-    if (end > start)
+    if (end > start) {}
     // TODO: Create array to store sequence
     let sequence = [];
     
     // TODO: Use for loop with step to generate sequence
     // Remember to use the step in the for loop increment
     for (i = start; i <= end; i += step) {
-        sequence.push(i + ">=");
+        sequence.push(i + "");
     }
 
     output.innerHTML = sequence;

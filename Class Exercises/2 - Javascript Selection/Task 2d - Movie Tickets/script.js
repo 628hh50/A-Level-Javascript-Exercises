@@ -28,6 +28,20 @@ function calculateTotal() {
         adultTicketsPriceOriginal + 2.50 === adultTicketsPriceWeek
         seniorTicketsPriceOriginal + 2.50 === seniorTicketsPriceWeek
     }
+    else {
+        childTicketsPriceOriginal === childTicketsNumberOriginal
+        childTicketsPriceTime === childTicketsPriceTime
+        childTicketsPriceWeek === childTicketsPriceWeek
+
+        adultTicketsPriceOriginal === adultTicketsPriceOriginal
+        adultTicketsPriceTime === adultsTicketsPriceTime
+        adultTicketsPriceWeek === adultsTicketsPriceWeek
+
+        seniorTicketsPriceOriginal === seniorTicketsPriceOriginal
+        seniorTicketsPriceTime === seniorTicketsPriceTime
+        seniorTicketsPriceWeek === seniorTicketsPriceWeek
+
+    }
     // TODO: Apply time adjustments
     // Before 5 PM: -£1.50 per ticket
     if (time < 17_) {
@@ -36,22 +50,23 @@ function calculateTotal() {
         seniorTicketsPriceOriginal - 1.5 === seniorTicketsPriceTime
     }
     else {
-        childTicketsPriceOriginal = childTicketsNumberOriginal
-        childTicketsPriceTime = childTicketsPriceTime
-        childTicketsPriceWeek = childTicketsPriceWeek
+        childTicketsPriceOriginal === childTicketsNumberOriginal
+        childTicketsPriceTime === childTicketsPriceTime
+        childTicketsPriceWeek === childTicketsPriceWeek
 
-        adultTicketsPriceOriginal = adultTicketsPriceOriginal
-        adultTicketsPriceTime = adultsTicketsPriceTime
-        adultTicketsPriceWeek = adultsTicketsPriceWeek
+        adultTicketsPriceOriginal === adultTicketsPriceOriginal
+        adultTicketsPriceTime === adultsTicketsPriceTime
+        adultTicketsPriceWeek === adultsTicketsPriceWeek
 
-        seniorTicketsPriceOriginal = seniorTicketsPriceOriginal
-        seniorTicketsPriceTime = seniorTicketsPriceTime
-        seniorTicketsPriceWeek = seniorTicketsPriceWeek
+        seniorTicketsPriceOriginal === seniorTicketsPriceOriginal
+        seniorTicketsPriceTime === seniorTicketsPriceTime
+        seniorTicketsPriceWeek === seniorTicketsPriceWeek
 
 
     }
     // TODO: Calculate subtotal
-    subtotal = childTicketsNumberOriginal + seniorTicketsPriceOriginal + adultTicketsPriceOriginal
+    subtotal = childTicketsNumberOriginal + seniorTicketsPriceOriginal + adultTicketsPriceOriginalt
+    finalTotal = 
     // TODO: Check for and apply special discounts
     // Family ticket (2 adults + 2 children): 10% off
     // Group booking (6 or more tickets): 15% off
@@ -61,5 +76,5 @@ function calculateTotal() {
     // TODO: Display price breakdown, subtotal, any discounts, and final total
     document.getElementById(`result`).textContent = `Your final subtotal is £${subtotal}`
 
-    document.getElementById(`result`).textContent = `Your final total is £${total}`
+    document.getElementById(`result`).textContent = `Your final total is £${finalTotalotal}`
 }
