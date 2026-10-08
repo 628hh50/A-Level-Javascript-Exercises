@@ -14,7 +14,7 @@ function displayNumbers() {
   while (count <= 10) {
     result += count + '<br>';
     count++;
-  }
+  } 
 
   output.innerHTML = result;
 }
