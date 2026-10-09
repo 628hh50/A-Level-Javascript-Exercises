@@ -8,7 +8,7 @@ for (let i = 0; i < 16; i++) {
     let square = document.createElement("button"); 
     square.classList.add("square"); 
     square.addEventListener("click", function() {
-    console.log("Square clicked " + i); 
+    console.log("Square clicked " + (i + 1)); 
     });
     gameGrid.appendChild(square); 
 }
