@@ -16,12 +16,23 @@ for (let i = 0; i < 16; i++) {
 
  
 
+    square.addEventListener("click", function() { 
+
+ 
+
+        console.log("Square clicked"); 
+
+ 
+
+    }); 
+
+ 
+
     gameGrid.appendChild(square); 
 
  
 
-}
-
+} 
  
 
 gameGrid.appendChild(square); 
