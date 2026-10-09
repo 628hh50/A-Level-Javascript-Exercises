@@ -4,11 +4,23 @@ let gameGrid = document.getElementById("gameGrid");
 
 console.log(gameGrid); 
 
-let square = document.createElement("button"); 
+for (let i = 0; i < 16; i++) { 
 
  
 
-square.classList.add("square"); 
+    let square = document.createElement("button"); 
+
+ 
+
+    square.classList.add("square"); 
+
+ 
+
+    gameGrid.appendChild(square); 
+
+ 
+
+}
 
  
 
