@@ -16,7 +16,7 @@ let values = [
 ]; 
 
 for (let i = 0; i < values.length; i++) { 
-
+ 
  
 
     let square = document.createElement("button"); 
@@ -44,5 +44,11 @@ for (let i = 0; i < values.length; i++) {
  
 
     gameGrid.appendChild(square); 
+    square.addEventListener("click", function() { 
 
+ 
+
+    // Your code here, when clicked, image should reveal that is at that index position
+    square.classList.add("revealed");
+}); 
 } 
