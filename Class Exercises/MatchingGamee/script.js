@@ -3,13 +3,56 @@ let gameGrid = document.getElementById("gameGrid");
  
 
 console.log(gameGrid); 
+let values = [ 
 
-for (let i = 0; i < 16; i++) { 
+    "apple.png", "banana.png", "star.png", "heart.png", 
+
+    "car.png", "dog.png", "football.png", "rainbow.png", 
+
+    "apple.png", "banana.png", "star.png", "heart.png", 
+
+    "car.png", "dog.png", "football.png", "rainbow.png" 
+
+]; 
+
+for (let i = 0; i < values.length; i++) { 
+square.addEventListener("click", function() { 
+
+ 
+
+    // Your code here 
+
+ 
+
+}); 
+ 
+
     let square = document.createElement("button"); 
+
+ 
+
     square.classList.add("square"); 
-    square.addEventListener("click", function() {
-    console.log("Square clicked " + (i + 1)); 
-    });
+
+ 
+
+    let picture = document.createElement("img"); 
+
+ 
+
+    picture.src = "images/" + values[i]; 
+
+ 
+
+    picture.alt = "Hidden picture"; 
+
+ 
+
+    square.appendChild(picture); 
+
+ 
+
     gameGrid.appendChild(square); 
-}
-gameGrid.appendChild(square); 
+
+ 
+
+} 
