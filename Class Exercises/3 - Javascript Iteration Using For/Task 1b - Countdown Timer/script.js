@@ -17,7 +17,9 @@ function startCountdown() {
     // Check if delay is at least 100ms
     if (delay <= 100) {}
     // TODO: Disable button during countdown
-    
+    while (startCountdown) {
+        button = false
+    }
     // TODO: Create the countdown loop
 
     // Use a for loop counting backwards
