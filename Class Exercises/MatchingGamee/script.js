@@ -16,15 +16,7 @@ let values = [
 ]; 
 
 for (let i = 0; i < values.length; i++) { 
-square.addEventListener("click", function() { 
 
- 
-
-    // Your code here 
-
- 
-
-}); 
  
 
     let square = document.createElement("button"); 
@@ -45,14 +37,12 @@ square.addEventListener("click", function() {
 
     picture.alt = "Hidden picture"; 
 
- 
 
     square.appendChild(picture); 
+
 
  
 
     gameGrid.appendChild(square); 
-
- 
 
 } 
