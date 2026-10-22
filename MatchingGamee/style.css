@@ -36,9 +36,9 @@ body {
 
     margin: 0; 
 
-    border: 1px solid #555; 
+    border: 1px solid #ff00f2; 
 
-    background-color: #ddd; 
+    background-color: #2bff00; 
 
     cursor: pointer; 
 
@@ -72,6 +72,6 @@ body {
 
 .square.matched { 
 
-    background-color: #b7e4c7; 
+    background-color: #ADD8E6; 
 
 } 
