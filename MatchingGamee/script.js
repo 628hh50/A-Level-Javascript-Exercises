@@ -48,7 +48,7 @@ for (let i = 0; i < values.length; i++) {
 
     gameGrid.appendChild(square); 
     square.addEventListener("click", function() { 
-    if (firstChoice = -1) {
+    if (firstChoice == -1) {
         square.classList.add[i] = firstChoice
     }
     else {
