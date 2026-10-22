@@ -21,15 +21,16 @@ function startCountdown() {
         button = false
     }
     // TODO: Create the countdown loop
-
     // Use a for loop counting backwards
-    for 
+    for (i = startNum; i <= end; i -= 1) {
+        sequence.push(i + "");
+    } 
     // Use setTimeout to create the delay between numbers
-    
+    setTimeout(delay)
     // TODO: Show "Blast off!" at the end
     document.getElementById('countdownDisplay').innerHTML = "Blast off!"
     // TODO: Re-enable button after countdown finishes
-}
+}   button = true
 
 // Initialize the page
 window.onload = function() {
