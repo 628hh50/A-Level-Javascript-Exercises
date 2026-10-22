@@ -48,10 +48,16 @@ for (let i = 0; i < values.length; i++) {
 
     gameGrid.appendChild(square); 
     square.addEventListener("click", function() { 
-
- 
+    if (firstChoice = -1) {
+        square.classList.add[i] = firstChoice
+    }
+    else {
+        square.classList.add[i] = secondChoice
+    }
 
     // Your code here, when clicked, image should reveal that is at that index position
     square.classList.add("revealed");
+    document.getElementById('turns').innerHTML = 'firstChoice';
+    document.getElementById('turns').innerHTML = 'secondChoice';
 }); 
 } 
