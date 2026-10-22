@@ -18,7 +18,10 @@ function startCountdown() {
     if (delay <= 100) {}
     // TODO: Disable button during countdown
     while (startCountdown) {
-        button = false
+    document.getElementById("Button").disabled = false;
+
+
+
     }
     // TODO: Create the countdown loop
     // Use a for loop counting backwards
@@ -30,7 +33,7 @@ function startCountdown() {
     // TODO: Show "Blast off!" at the end
     document.getElementById('countdownDisplay').innerHTML = "Blast off!"
     // TODO: Re-enable button after countdown finishes
-}   button = true
+    document.getElementById("Button").disabled = true;
 
 // Initialize the page
 window.onload = function() {
