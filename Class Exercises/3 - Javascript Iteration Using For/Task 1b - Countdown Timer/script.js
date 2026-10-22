@@ -5,37 +5,55 @@ function startCountdown() {
     const delay = parseInt(document.getElementById('delay').value);
     
     // Get display element and button
-    const display = document.getElementById('countdownDisplay');
-    const button = document.getElementById('startButton');
+    let display = document.getElementById('countdownDisplay');
+    let button = document.getElementById('startButton');
     
     // TODO: Validate inputs
     // Check if values are valid numbers
     if (isNaN(startNum) || isNaN(delay)) {
-        output.innerHTML = "check if numbers are real" }
+        display.innerHTML = "check if numbers are real" }
+        return;
+
     // Check if start number is positive
-    if (startNum <= 1) {}
+    if (startNum <= 1) {
+        display.innerHTML = "Start number must be greater than 1";
+        return;
+    }
+    
     // Check if delay is at least 100ms
-    if (delay <= 100) {}
+    if (delay <= 100) {
+        return;
+    }
+
+
     // TODO: Disable button during countdown
-    while (startCountdown) {
-    document.getElementById("Button").disabled = false;
+    button.disabled = true;
 
 
 
     }
     // TODO: Create the countdown loop
     // Use a for loop counting backwards
-    for (i = startNum; i <= end; i -= 1) {
-        sequence.push(i + "");
+    let currentNum = startNum;
+
+    function tick() {
+        if (current >= 0) {
+            display.innerHTML = currentNum;
+            currentNum--;
+        }
+
     } 
     // Use setTimeout to create the delay between numbers
-    setTimeout(delay)
+    setTimeout (tick, delay);
+} else {
     // TODO: Show "Blast off!" at the end
     document.getElementById('countdownDisplay').innerHTML = "Blast off!"
     // TODO: Re-enable button after countdown finishes
-    document.getElementById("Button").disabled = true;
+    button.disabled = false;
+    tick();
+
 
 // Initialize the page
 window.onload = function() {
     document.getElementById('countdownDisplay').textContent = 'Ready to start!';
-};
+}
