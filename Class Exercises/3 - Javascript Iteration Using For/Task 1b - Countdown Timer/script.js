@@ -1,59 +1,54 @@
-// TODO: Write the countdown function
 function startCountdown() {
-    // Get input values
+    // 1. Get input values
     const startNum = parseInt(document.getElementById('startNum').value);
     const delay = parseInt(document.getElementById('delay').value);
-    
-    // Get display element and button
+
+    // 2. Get display element and button
     let display = document.getElementById('countdownDisplay');
     let button = document.getElementById('startButton');
-    
-    // TODO: Validate inputs
-    // Check if values are valid numbers
-    if (isNaN(startNum) || isNaN(delay)) {
-        display.innerHTML = "check if numbers are real" }
-        return;
 
-    // Check if start number is positive
+    // 3. Validate inputs
+    if (isNaN(startNum) || isNaN(delay)) {
+        display.innerHTML = "Check if numbers are real";
+        return; // Stop the function if inputs are invalid
+    }
     if (startNum <= 1) {
         display.innerHTML = "Start number must be greater than 1";
         return;
     }
-    
-    // Check if delay is at least 100ms
-    if (delay <= 100) {
+    if (delay < 100) {
+        display.innerHTML = "Delay must be at least 100ms";
         return;
     }
 
-
-    // TODO: Disable button during countdown
+    // 4. Disable button during countdown
     button.disabled = true;
 
-
-
-    }
-    // TODO: Create the countdown loop
-    // Use a for loop counting backwards
+    // 5. Create the countdown tracking variables
     let currentNum = startNum;
 
+    // 6. Define a helper function to handle the ticking countdown
     function tick() {
-        if (current >= 0) {
+        if (currentNum >= 0) {
             display.innerHTML = currentNum;
-            currentNum--;
+            currentNum--; 
+            
+            // Wait for the specified delay, then run tick again
+            setTimeout(tick, delay); 
+        } else {
+            // 7. Show "Blast off!" at the end
+            display.innerHTML = "Blast off!";
+            
+            // 8. Re-enable button after countdown finishes
+            button.disabled = false;
         }
+    }
 
-    } 
-    // Use setTimeout to create the delay between numbers
-    setTimeout (tick, delay);
-} else {
-    // TODO: Show "Blast off!" at the end
-    document.getElementById('countdownDisplay').innerHTML = "Blast off!"
-    // TODO: Re-enable button after countdown finishes
-    button.disabled = false;
+    // Start the first tick
     tick();
-
+}
 
 // Initialize the page
 window.onload = function() {
     document.getElementById('countdownDisplay').textContent = 'Ready to start!';
-}
+};
