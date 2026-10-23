@@ -1,3 +1,4 @@
+let squares = []; 
 let gameGrid = document.getElementById("gameGrid"); 
 
  
@@ -19,34 +20,24 @@ let firstChoice = -1;
 let secondChoice = -1; 
 
 for (let i = 0; i < values.length; i++) { 
- 
- 
-
+    
     let square = document.createElement("button"); 
-
- 
 
     square.classList.add("square"); 
 
- 
-
     let picture = document.createElement("img"); 
-
- 
 
     picture.src = "images/" + values[i]; 
 
  
-
     picture.alt = "Hidden picture"; 
-
 
     square.appendChild(picture); 
 
-
- 
-
     gameGrid.appendChild(square); 
+
+    squares.push(square); 
+
     square.addEventListener("click", function() { 
     if (firstChoice == -1) {
         square.classList.add[i] = firstChoice
