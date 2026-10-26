@@ -20,7 +20,7 @@ function generateSequence() {
     let maxNum = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value);Q
     // TODO: Initialize array to store sequence
-    
+    array 
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
     // countDown: Use a for loop counting from N down to 1
