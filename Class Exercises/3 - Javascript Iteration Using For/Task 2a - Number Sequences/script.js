@@ -20,12 +20,16 @@ function generateSequence() {
     let maxNum = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value);Q
     // TODO: Initialize array to store sequence
-    array 
+    array1 = [];
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
+    for 
     // countDown: Use a for loop counting from N down to 1
+    
     // steps: Use a for loop with custom step value
+    
     // even: Use a for loop with if statement to check even numbers
+    
     // odd: Use a for loop with if statement to check odd numbers
     
     // TODO: Calculate sum of sequence
