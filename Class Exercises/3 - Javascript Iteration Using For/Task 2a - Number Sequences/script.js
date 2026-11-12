@@ -17,15 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to generate number sequence
 function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
-    let maxNum = parseInt(document.getElementById('maxNumber').value);
+    let maxNumber = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value);Q
     // TODO: Initialize array to store sequence
     array1 = [];
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
-    for 
+    for (let i = 1; i <= maxNumber; i++){
+        total += i;
+        display += `${i} + ${total} \n`;
+        document.getElementById("maxNumber").innertext = display;
+    }
     // countDown: Use a for loop counting from N down to 1
-    
+    for (let i = maxNumber; maxNumber <= i; i++){
+        total += maxNumber;
+        display +=  `${i}`
+    }
     // steps: Use a for loop with custom step value
     
     // even: Use a for loop with if statement to check even numbers
