@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Event listeners for each button
-    document.getElementById("btn3TimesTable").addEventListener("click", function() {
-        displayMultiplicationTable(3);
-   
+    document.getElementById("btn9TimesTable").addEventListener("click", function() {
+        displayMultiplicationTable(9);
+    });
     document.getElementById("btnTotalNumbers").addEventListener("click", function() {
         totalNumbersBetween1To10();
     });
