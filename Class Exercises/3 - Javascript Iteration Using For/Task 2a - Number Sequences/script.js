@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
     let maxNumber = parseInt(document.getElementById('maxNumber').value);
-    let sequenceType = document.getElementById('sequenceType').value);Q
+    let sequenceType = document.getElementById('sequenceType').value);
     // TODO: Initialize array to store sequence
     array1 = [];
     // TODO: Generate sequence based on type selected:
@@ -29,12 +29,15 @@ function generateSequence() {
         document.getElementById("maxNumber").innertext = display;
     }
     // countDown: Use a for loop counting from N down to 1
-    for (let i = maxNumber; maxNumber <= i; i++){
-        total += maxNumber;
-        display +=  `${i}`
+    for (let i = 1; i <= maxNumber; i--){
+        total -= i;
+        display +=  `${maxNumber-i}` 
     }
     // steps: Use a for loop with custom step value
-    
+    for (let i = 1; i <= maxNumber; i+stepInput ){
+
+        
+    }
     // even: Use a for loop with if statement to check even numbers
     
     // odd: Use a for loop with if statement to check odd numbers
