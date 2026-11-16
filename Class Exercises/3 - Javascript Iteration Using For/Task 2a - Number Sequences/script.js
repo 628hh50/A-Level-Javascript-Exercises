@@ -28,30 +28,43 @@ function generateSequence() {
         display += `${i} + ${total} \n`;
         document.getElementById("maxNumber").innertext = display;
     }
+
     // countDown: Use a for loop counting from N down to 1
     for (let i = 1; i <= maxNumber; i--){
         total -= i;
         display +=  `${maxNumber} ${-i}` 
+    document.getElementById("maxNumber").innertext = display;
     }
+
     // steps: Use a for loop with custom step value
     for (let i = 1; i <= maxNumber; i+stepInput ){
         total += stepInput
-        display += `${i}+ ${stepInput}`
-        }
+        display += `${i}+ ${stepInput}
+    document.getElementById("maxNumber").innertext = display;
+    }
+
     // even: Use a for loop with if statement to check even numbers
      for (let i = 1, i <= maxNumber i++) {
      if (maxNumber % 2) = 0 {
      equal = "even"
-     }
+    }}
 
      else {
      equal = "not even"      
-     }}
-         
-    
+    document.getElementById("maxNumber").innertext = display;     
+    }
+
     // odd: Use a for loop with if statement to check odd numbers
-    
+     for (let i = 1; i <= maxNumber; i++){
+     if (maxNumber % 2) = 0 {
+     equal = "even
+     }
+
+    else{
+    equal = "not even"    
+        } 
+     }
     // TODO: Calculate sum of sequence
-    
+    sum = i
     // TODO: Display sequence, count of numbers, and sum
 }
