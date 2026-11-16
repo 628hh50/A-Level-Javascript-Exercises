@@ -19,7 +19,7 @@ function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
     let maxNumber = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value);
-    
+
     // TODO: Initialize array to store sequence
     array1 = [];
     // TODO: Generate sequence based on type selected:
@@ -67,5 +67,14 @@ function generateSequence() {
      }
     // TODO: Calculate sum of sequence
     sum = i
+
+
+
+    
     // TODO: Display sequence, count of numbers, and sum
-}
+    document.getElementById("maxNumber").innertext = display;
+    document.getElementById("count").innertext = display;
+    document.getElementById("sum").innertext = display;
+    document.getElementById("stepInput").innertext = display;
+
+    }
