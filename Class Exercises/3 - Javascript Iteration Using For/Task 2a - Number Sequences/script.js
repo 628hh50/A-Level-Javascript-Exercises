@@ -31,14 +31,23 @@ function generateSequence() {
     // countDown: Use a for loop counting from N down to 1
     for (let i = 1; i <= maxNumber; i--){
         total -= i;
-        display +=  `${maxNumber-i}` 
+        display +=  `${maxNumber} ${-i}` 
     }
     // steps: Use a for loop with custom step value
     for (let i = 1; i <= maxNumber; i+stepInput ){
-
-        
-    }
+        total += stepInput
+        display += `${i}+ ${stepInput}`
+        }
     // even: Use a for loop with if statement to check even numbers
+     for (let i = 1, i <= maxNumber i++) {
+     if (maxNumber % 2) = 0 {
+     equal = "even"
+     }
+
+     else {
+     equal = "not even"      
+     }}
+         
     
     // odd: Use a for loop with if statement to check odd numbers
     
