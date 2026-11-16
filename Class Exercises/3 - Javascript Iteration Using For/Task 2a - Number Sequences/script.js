@@ -19,6 +19,7 @@ function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
     let maxNumber = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value);
+    
     // TODO: Initialize array to store sequence
     array1 = [];
     // TODO: Generate sequence based on type selected:
