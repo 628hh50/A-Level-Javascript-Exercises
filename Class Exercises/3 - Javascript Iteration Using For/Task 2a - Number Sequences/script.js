@@ -39,15 +39,16 @@ function generateSequence() {
 
     // steps: Use a for loop with custom step value
     for (let i = 1; i <= maxNumber; i+stepInput ){
-        total += stepInput
+                total += stepInput
         display += `${i}+ ${stepInput}
     document.getElementById("maxNumber").innertext = display;
     }
+    
 
     // even: Use a for loop with if statement to check even numbers
      for (let i = 1, i <= maxNumber i++) {
      if (maxNumber % 2) = 0 {
-     equal = "even"
+          equal = "even"
     }}
 
      else {
