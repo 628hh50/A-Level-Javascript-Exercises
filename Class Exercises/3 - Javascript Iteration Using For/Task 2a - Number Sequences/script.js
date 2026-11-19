@@ -27,21 +27,18 @@ function generateSequence() {
     for (let i = 1; i <= maxNumber; i++){
         total += i;
         display += `${i} + ${total} \n`;
-        document.getElementById("output").innertext = display;
     }
 
     // countDown: Use a for loop counting from N down to 1
     for (let i = 1; i <= maxNumber; i--){
         total -= i;
         display +=  `${maxNumber} ${-i}` 
-    document.getElementById("output").innertext = display;
     }
 
     // steps: Use a for loop with custom step value
     for (let i = 1; i <= maxNumber; i+stepInput) {
         total += stepInput
         display += `${i}+ ${stepInput}`
-        document.getElementById("output").innertext = display;
     }    
 
     // even: Use a for loop with if statement to check even numbers
@@ -49,11 +46,9 @@ function generateSequence() {
         if (maxNumber % 2 === 0) {
             equal = "even"
         } else {
-            equal = "not even"      
-            document.getElementById("output").innertext = display;     
+            equal = "not even"        
         }
      }
-
     // odd: Use a for loop with if statement to check odd numbers
      for (let i = 1; i <= maxNumber; i++){
      if (maxNumber % 2 === 0) {
@@ -65,14 +60,10 @@ function generateSequence() {
         } 
      }
     // TODO: Calculate sum of sequence
-    sum = 0
-    sum += i + maxNumber
-
-
-
-    
+   let sum = 0;
+   for (let i = 1; i <= maxNumber; i++){
+    sum += i
+   }
     // TODO: Display sequence, count of numbers, and sum
-    document.getElementById("sequenceDisplay").innertext = display;
-    document.getElementById("sum").innertext = display;
-    document.getElementById("count").innertext = display;  
-    }
+
+}
