@@ -49,6 +49,7 @@ function generateSequence() {
             equal = "not even"        
         }
      }
+
     // odd: Use a for loop with if statement to check odd numbers
      for (let i = 1; i <= maxNumber; i++){
      if (maxNumber % 2 === 0) {
@@ -62,8 +63,10 @@ function generateSequence() {
     // TODO: Calculate sum of sequence
    let sum = 0;
    for (let i = 1; i <= maxNumber; i++){
-    sum += i
    }
+    
     // TODO: Display sequence, count of numbers, and sum
-
-}
+    document.getElementById("sequenceDisplay").innertext = display;
+    document.getElementById("sum").innertext = display;
+    document.getElementById("count").innertext = display;  
+    }
