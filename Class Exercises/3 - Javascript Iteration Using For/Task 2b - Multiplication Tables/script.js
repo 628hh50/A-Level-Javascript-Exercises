@@ -11,7 +11,7 @@ function generateTables() {
     
     // TODO: Validate input values
     // Check if values are valid numbers and in correct range
-    
+    if (startNum    ) 
     // TODO: Initialize counter for total calculations
     let totalCalculations = 0;
     
