@@ -38,30 +38,29 @@ function generateSequence() {
     }
 
     // steps: Use a for loop with custom step value
-    for (let i = 1; i <= maxNumber; i+stepInput){
+    for (let i = 1; i <= maxNumber; i+stepInput) {
         total += stepInput
-        display += `${i}+ ${stepInput}
-    document.getElementById("maxNumber").innertext = display;
+        display += `${i}+ ${stepInput}`
+        document.getElementById("maxNumber").innertext = display;
     }    
 
     // even: Use a for loop with if statement to check even numbers
-     for (let i = 1, i <= maxNumber i++) {
-     if (maxNumber % 2) = 0 {
-          equal = "even"
-    }}
-
-     else {
-     equal = "not even"      
-    document.getElementById("maxNumber").innertext = display;     
-    }
+     for (let i = 1; i <= maxNumber; i++) {
+        if (maxNumber % 2 === 0) {
+            equal = "even"
+        } else {
+            equal = "not even"      
+            document.getElementById("maxNumber").innertext = display;     
+        }
+     }
 
     // odd: Use a for loop with if statement to check odd numbers
      for (let i = 1; i <= maxNumber; i++){
-     if (maxNumber % 2) = 0 {
-     equal = "even
+     if (maxNumber % 2 === 0) {
+     equal = "even"
      }
 
-    else{
+    else {
     equal = "not even"    
         } 
      }
@@ -72,5 +71,7 @@ function generateSequence() {
 
     
     // TODO: Display sequence, count of numbers, and sum
-
+    document.getElementById("sequenceDisplay").innertext = display;
+    document.getElementById("sum").innertext = display;
+    document.getElementById("count").innertext = display;  
     }
