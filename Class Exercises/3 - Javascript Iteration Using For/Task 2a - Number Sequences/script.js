@@ -19,11 +19,14 @@ function generateSequence() {
     // TODO: Get the maximum number and sequence type from inputs
     let maxNumber = parseInt(document.getElementById('maxNumber').value);
     let sequenceType = document.getElementById('sequenceType').value;
+    let total = 0
+    let display = document.getElementById('sequenceDisplay').value;
 
     // TODO: Initialize array to store sequence
     let array1 = [];
     // TODO: Generate sequence based on type selected:
     // countUp: Use a for loop counting from 1 to N
+    if ()
     for (let i = 1; i <= maxNumber; i++){
         total += i;
         display += `${i} + ${total} \n`;
@@ -31,8 +34,9 @@ function generateSequence() {
 
     // countDown: Use a for loop counting from N down to 1
     for (let i = 1; i <= maxNumber; i--){
-        total -= i;
-        display +=  `${maxNumber} ${-i}` 
+        total -= maxNumber;
+        console.log(total)
+        display -=  `${i} - ${maxNumber}` 
     }
 
     // steps: Use a for loop with custom step value
