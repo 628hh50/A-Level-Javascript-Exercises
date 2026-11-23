@@ -12,7 +12,7 @@ function displayNumbers() {
   let result = '';
 
   while (count <= 10) {
-    result += count + '<br>';
+    result += count + '<br>'
     count++;
   } 
 
