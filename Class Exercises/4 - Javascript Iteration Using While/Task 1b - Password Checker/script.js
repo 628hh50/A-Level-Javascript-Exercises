@@ -10,7 +10,10 @@ button.addEventListener('click', () => {
 function checkPassword() {
     const passwordInput = document.getElementById('passwordInput'
         const password = ' ';
+        while (passwordInput != "letmein"){
 
+            
+        }
 
 
 
