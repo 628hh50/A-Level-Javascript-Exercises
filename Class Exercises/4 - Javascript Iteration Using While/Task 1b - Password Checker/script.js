@@ -12,10 +12,11 @@ function checkPassword() {
         const password = ' ';
         while (passwordInput != "letmein"){
 
+
+
+
+
             
         }
-
-
-
     )
 }
