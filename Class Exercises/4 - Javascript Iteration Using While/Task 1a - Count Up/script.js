@@ -18,5 +18,5 @@ button.addEventListener('click', () => {
     count++;
     }
 
-    output.innerHTML = result;
- }
+    output.innerHTML = result; 
+}
