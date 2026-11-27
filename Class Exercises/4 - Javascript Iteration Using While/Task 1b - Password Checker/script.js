@@ -8,15 +8,19 @@ button.addEventListener('click', () => {
 })
 
 function checkPassword() {
-    const passwordInput = document.getElementById('passwordInput'
+    const passwordInput = document.getElementById('passwordInput').value; 
         const password = ' ';
+        
         while (passwordInput != "letmein"){
+        if (passwordInput != "letmein){
+        document.getElementById('message').innerHTML = "wrong password"    
+    }
+        else {
 
 
 
 
-
-            
+        document.getElementById('message').innerHTML = "Corrrect Password"    
         }
     )
 }
